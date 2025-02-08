@@ -1,4 +1,5 @@
 const negocioModel = require("../models/negocios");
+const path = require("path");
 
 const getNegocios = async (req, res) => {
   const negocios = await negocioModel.find();
