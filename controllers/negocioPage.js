@@ -217,12 +217,13 @@ const testFunctionImage = async (req, res) => {
         `${negocioID}${path.extname(req.file.originalname)}`
       );
     }
+    // Construct the update object dynamically
+    const updateData = {};
+    updateData[`image${number}`] = image;
 
     const negocioPage = await negocioPageModel.findOneAndUpdate(
       { negocioID },
-      {
-        image1: image,
-      },
+      updateData,
       { new: true }
     );
 
