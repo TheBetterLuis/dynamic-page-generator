@@ -21,7 +21,7 @@ const { testImageUpload } = require("../middleware/testMiddleware");
 router.get("/all", getNegociosPages);
 
 router.post("/single", getNegocioPageByNegocioID);
-router.post("/single/:id", getNegocioPageByNegocioIDParam);
+router.get("/single/:id", getNegocioPageByNegocioIDParam);
 router.post("/", createNegocioPage);
 router.delete("/", deleteNegocioPage);
 
