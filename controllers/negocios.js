@@ -38,11 +38,12 @@ const getRegularUsers = async (req, res) => {
 
 const createNegocio = async (req, res) => {
   try {
-    const { name, description } = req.body;
+    const { name, description, category } = req.body;
 
     const negocio = await negocioModel.create({
       name,
       description,
+      category,
     });
     res.status(201).json(negocio);
   } catch (error) {

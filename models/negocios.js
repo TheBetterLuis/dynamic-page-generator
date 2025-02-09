@@ -16,6 +16,27 @@ const NegocioSchema = new mongoose.Schema(
       type: String,
       default: "images/default/default.png",
     },
+    category: {
+      type: String,
+      enum: [
+        "turismo",
+        "hoteleria",
+        "comida",
+        "abastos",
+        "licorerias",
+        "farmacias",
+        "moda",
+        "jugueteria",
+        "miscelanea",
+        "industria automotriz",
+        "paqueteria",
+        "salud",
+      ],
+      required: [
+        true,
+        "Categoria es requerida (turismo,hoteleria, comida, abastos, licorerias, farmacias, moda, jugueteria,  miscelanea,industria automotriz,  paqueteria, salud)",
+      ],
+    },
   },
   {
     timestamps: true,
