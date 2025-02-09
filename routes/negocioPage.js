@@ -10,6 +10,7 @@ const {
   uploadNegocioPageImage,
   uploadNegocioPageImage1,
   testFunctionImage,
+  getNegocioPageByNegocioIDParam,
 } = require("../controllers/negocioPage");
 //const {  negocioPageImageUpload,  negocioPageImage1Upload,} = require("../middleware/negocioPageImageUpload");
 
@@ -20,6 +21,7 @@ const { testImageUpload } = require("../middleware/testMiddleware");
 router.get("/all", getNegociosPages);
 
 router.post("/single", getNegocioPageByNegocioID);
+router.post("/single/:id", getNegocioPageByNegocioIDParam);
 router.post("/", createNegocioPage);
 router.delete("/", deleteNegocioPage);
 

@@ -16,6 +16,16 @@ const getNegocioPageByNegocioID = async (req, res) => {
   }
 };
 
+const getNegocioPageByNegocioIDParam = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const negocioPage = await negocioPageModel.find({ negocioID: id });
+    res.status(200).json(negocioPage);
+  } catch (e) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 const updateNegocioPage = async (req, res) => {
   try {
     const { negocioID } = req.body;
@@ -260,4 +270,5 @@ module.exports = {
   uploadNegocioPageImage,
   uploadNegocioPageImage1,
   testFunctionImage,
+  getNegocioPageByNegocioIDParam,
 };
