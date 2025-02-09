@@ -1,0 +1,22 @@
+.business-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.business-card h2 {
+  margin: 0 0 8px 0;
+}
+
+.business-card p {
+  margin: 4px 0;
+}
+
+.business-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 8px;
+}
