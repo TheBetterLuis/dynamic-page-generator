@@ -8,11 +8,14 @@ const {
   deleteNegocio,
   updateNegocio,
   uploadNegocioImage,
+  getNegociosByCategory,
 } = require("../controllers/negocios");
 
 const { negocioImageUpload } = require("../middleware/negocioImageUpload");
 
 router.get("/all", getNegocios);
+router.post("/category", getNegociosByCategory);
+
 router.post("/single", getNegocioByNegocioID);
 router.post("/", createNegocio);
 router.delete("/", deleteNegocio);

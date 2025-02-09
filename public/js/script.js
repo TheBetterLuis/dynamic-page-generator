@@ -1,7 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetchData();
+  //  fetchData();
+  fetchCategoryData("comida", ".comida-section");
+  fetchCategoryData("turismo", ".turismo-section");
 });
 
+function fetchCategoryData(category, targetClass) {
+  const dataContainer = document.querySelector(targetClass);
+
+  fetch("http://localhost:3001/api/negocios/category", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ category: category }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      // Clear previous content
+      dataContainer.innerHTML = "";
+
+      // Display new data
+      data.forEach((item) => {
+        const businessCard = createBusinessCard(item);
+        dataContainer.appendChild(businessCard);
+      });
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+      dataContainer.textContent = "Failed to load data";
+    });
+}
 function fetchData() {
   const dataContainer = document.getElementById("SECTION_CARDS");
 
@@ -18,39 +46,7 @@ function fetchData() {
       dataContainer.textContent = "Failed to load data";
     });
 }
-/*
-function createBusinessCard(data) {
-  const card = document.createElement("div");
-  card.className = "business-card";
 
-  const name = document.createElement("h2");
-  name.textContent = data.name;
-  card.appendChild(name);
-
-  const description = document.createElement("p");
-  description.textContent = data.description;
-  card.appendChild(description);
-
-  const image = document.createElement("img");
-  image.src = data.image;
-  image.alt = data.name;
-  card.appendChild(image);
-
-  const createdAt = document.createElement("p");
-  createdAt.textContent = `Created At: ${new Date(
-    data.createdAt
-  ).toLocaleString()}`;
-  card.appendChild(createdAt);
-
-  const updatedAt = document.createElement("p");
-  updatedAt.textContent = `Updated At: ${new Date(
-    data.updatedAt
-  ).toLocaleString()}`;
-  card.appendChild(updatedAt);
-
-  return card;
-}
-  */
 function createBusinessCard(data) {
   const card = document.createElement("div");
   card.id = "Card";

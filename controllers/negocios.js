@@ -116,6 +116,18 @@ const uploadNegocioImage = async (req, res) => {
   }
 };
 
+const getNegociosByCategory = async (req, res) => {
+  try {
+    const { category } = req.body;
+    const negocios = await negocioModel.find({
+      category,
+    });
+    res.status(200).json(negocios);
+  } catch (e) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 module.exports = {
   getNegocios,
   getNegocioByNegocioID,
@@ -123,4 +135,5 @@ module.exports = {
   deleteNegocio,
   updateNegocio,
   uploadNegocioImage,
+  getNegociosByCategory,
 };
