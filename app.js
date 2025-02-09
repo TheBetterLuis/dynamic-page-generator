@@ -34,7 +34,7 @@ app.get("/negocio", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "negocio_template.html"));
 });
 
-app.get("/test", (req, res) => {
+app.get("/test/:id", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "TESTnegocio_template.html"));
 });
 
