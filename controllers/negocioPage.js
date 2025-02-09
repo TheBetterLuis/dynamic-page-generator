@@ -18,9 +18,10 @@ const getNegocioPageByNegocioID = async (req, res) => {
 
 const updateNegocioPage = async (req, res) => {
   try {
-    const { id } = req.body;
+    const { negocioID } = req.body;
 
-    const negocioPage = await negocioPageModel.findById(id);
+    //    const negocioPage = await negocioPageModel.findById(id);
+    const negocioPage = await negocioPageModel.findOne({ negocioID });
 
     if (!negocioPage) {
       return res
@@ -28,14 +29,27 @@ const updateNegocioPage = async (req, res) => {
         .json({ message: "Pagina de negocio no encontrada" });
     }
 
-    if (req.body.negocioID) negocioPage.negocioID = req.body.negocioID;
     if (req.body.title) negocioPage.title = req.body.title;
-    if (req.body.product) negocioPage.product = req.body.product;
-    if (req.body.description) negocioPage.description = req.body.description;
+
+    if (req.body.product1) negocioPage.product1 = req.body.product1;
+    if (req.body.product2) negocioPage.product2 = req.body.product2;
+    if (req.body.product3) negocioPage.product3 = req.body.product3;
+    if (req.body.product4) negocioPage.product4 = req.body.product4;
+    if (req.body.product5) negocioPage.product5 = req.body.product5;
+    if (req.body.product6) negocioPage.product6 = req.body.product6;
+
+    if (req.body.description1) negocioPage.description1 = req.body.description1;
+    if (req.body.description2) negocioPage.description2 = req.body.description2;
+    if (req.body.description3) negocioPage.description3 = req.body.description3;
+    if (req.body.description4) negocioPage.description4 = req.body.description4;
+    if (req.body.description5) negocioPage.description5 = req.body.description5;
+    if (req.body.description6) negocioPage.description6 = req.body.description6;
+
     if (req.body.email) negocioPage.email = req.body.email;
     if (req.body.instagram) negocioPage.instagram = req.body.instagram;
     if (req.body.whatsapp) negocioPage.whatsapp = req.body.whatsapp;
     if (req.body.addressBook) negocioPage.addressBook = req.body.addressBook;
+
     if (req.body.location) negocioPage.location = req.body.location;
     if (req.body.image1) negocioPage.image1 = req.body.image1;
     if (req.body.image2) negocioPage.image2 = req.body.image2;
@@ -59,8 +73,8 @@ const createNegocioPage = async (req, res) => {
     const negocioPageData = {
       negocioID,
       title,
-      product,
-      description,
+      product1: product,
+      description1: description,
     };
 
     if (req.body.email) negocioPageData.email = req.body.email;
@@ -81,7 +95,7 @@ const createNegocioPage = async (req, res) => {
 const deleteNegocioPage = async (req, res) => {
   try {
     const { id } = req.body;
-    const deletedNegocioPage = await negocioModel.findByIdAndDelete(id);
+    const deletedNegocioPage = await negocioPageModel.findByIdAndDelete(id);
     if (!deletedNegocioPage) {
       res.status(404).json({ message: "Pagina de negocio no encontrada" });
     }
