@@ -1,5 +1,5 @@
 const negocioPageModel = require("../models/negocioPage");
-//const path = require("path");
+const path = require("path");
 
 const getNegociosPages = async (req, res) => {
   const negociosPages = await negocioPageModel.find();
@@ -9,7 +9,7 @@ const getNegociosPages = async (req, res) => {
 const getNegocioPageByNegocioID = async (req, res) => {
   try {
     const { id } = req.body;
-    const negocioPage = await negocioPageModel.find({ _id: id });
+    const negocioPage = await negocioPageModel.find({ negocioID: id });
     res.status(200).json(negocioPage);
   } catch (e) {
     res.status(500).json({ message: error.message });
@@ -93,6 +93,83 @@ const deleteNegocioPage = async (req, res) => {
   }
 };
 
+const uploadNegocioPageImage1 = async (req, res) => {
+  try {
+    const negocioPageID = req.params.id;
+    let image = req.file ? req.file.path : null;
+
+    if (image) {
+      image = path.join(
+        "images",
+        negocioPageID,
+        "1",
+        `${negocioPageID}${path.extname(req.file.originalname)}`
+      );
+    }
+
+    const negocioPage = await negocioPageModel.findByIdAndUpdate(
+      negocioID,
+      {
+        image1,
+      },
+      { new: true }
+    );
+
+    if (!negocioPage) {
+      return res
+        .status(404)
+        .json({ message: "Pagina de negocio no encontrada" });
+    }
+
+    res.status(201).json(negocioPage);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+const uploadNegocioPageImage = async (req, res) => {
+  try {
+    const negocioPageID = req.params.id;
+    const imageNumber = req.params.number;
+    let image = req.file ? req.file.path : null;
+
+    // Check if image is defined and assign a valid path
+    if (image) {
+      image = path.join(
+        "images",
+        negocioPageID,
+        imageNumber,
+        `${negocioPageID}${path.extname(req.file.originalname)}`
+      );
+    } else {
+      return res.status(400).json({ message: "Image file is required." });
+    }
+
+    // Log the image path for debugging
+    console.log(`Image Path: ${image}`);
+
+    // Construct the update object with the imageNumber as the key
+    const updateData = {};
+    updateData[`image${imageNumber}`] = image;
+
+    const negocioPage = await negocioPageModel.findByIdAndUpdate(
+      negocioPageID,
+      updateData,
+      { new: true }
+    );
+
+    if (!negocioPage) {
+      return res
+        .status(404)
+        .json({ message: "Pagina de negocio no encontrada" });
+    }
+
+    res.status(201).json(negocioPage);
+  } catch (error) {
+    console.error(`Error in uploadNegocioPageImage: ${error.message}`);
+    res.status(500).json({ message: error.message });
+  }
+};
+
 /*
 
 const getTechUsers = async (req, res) => {
@@ -114,37 +191,6 @@ const getRegularUsers = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
-const uploadNegocioImage = async (req, res) => {
-  try {
-    const negocioID = req.params.id;
-    let image = req.file ? req.file.path : null;
-
-    if (image) {
-      image = path.join(
-        "images",
-        negocioID,
-        `${negocioID}${path.extname(req.file.originalname)}`
-      );
-    }
-
-    const negocio = await negocioModel.findByIdAndUpdate(
-      negocioID,
-      {
-        image,
-      },
-      { new: true }
-    );
-
-    if (!negocio) {
-      return res.status(404).json({ message: "Ticket no encontrado" });
-    }
-
-    res.status(201).json(negocio);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-};
-
 const getNegociosByCategory = async (req, res) => {
   try {
     const { category } = req.body;
@@ -157,6 +203,38 @@ const getNegociosByCategory = async (req, res) => {
   }
 };
 */
+const testFunctionImage = async (req, res) => {
+  try {
+    const negocioID = req.params.id;
+    const number = req.params.number;
+    let image = req.file ? req.file.path : null;
+
+    if (image) {
+      image = path.join(
+        "images",
+        negocioID,
+        `${number}`,
+        `${negocioID}${path.extname(req.file.originalname)}`
+      );
+    }
+
+    const negocioPage = await negocioPageModel.findOneAndUpdate(
+      { negocioID },
+      {
+        image1: image,
+      },
+      { new: true }
+    );
+
+    if (!negocioPage) {
+      return res.status(404).json({ message: "Negocio page no encontrado" });
+    }
+
+    res.status(201).json(negocioPage);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
 
 module.exports = {
   getNegociosPages,
@@ -164,4 +242,7 @@ module.exports = {
   createNegocioPage,
   deleteNegocioPage,
   updateNegocioPage,
+  uploadNegocioPageImage,
+  uploadNegocioPageImage1,
+  testFunctionImage,
 };

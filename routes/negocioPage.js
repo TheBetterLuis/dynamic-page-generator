@@ -7,7 +7,13 @@ const {
   createNegocioPage,
   deleteNegocioPage,
   updateNegocioPage,
+  uploadNegocioPageImage,
+  uploadNegocioPageImage1,
+  testFunctionImage,
 } = require("../controllers/negocioPage");
+//const {  negocioPageImageUpload,  negocioPageImage1Upload,} = require("../middleware/negocioPageImageUpload");
+
+const { testImageUpload } = require("../middleware/testMiddleware");
 
 //const { negocioImageUpload } = require("../middleware/negocioImageUpload");
 
@@ -16,11 +22,27 @@ router.get("/all", getNegociosPages);
 router.post("/single", getNegocioPageByNegocioID);
 router.post("/", createNegocioPage);
 router.delete("/", deleteNegocioPage);
+
+router.post(
+  "/:id/image/:number",
+  testImageUpload.single("image"),
+  testFunctionImage
+);
 /*
 router.post(
-  "/:id/image",
-  negocioImageUpload.single("image"),
-  uploadNegocioImage
+  "/:negocioID/image/1",
+  (req, res, next) => {
+    negocioPageImage1Upload.single("image")(req, res, next);
+  },
+  uploadNegocioPageImage1
+);
+
+*/
+/*
+router.post(
+  "/:negocioID/image/1",
+  negocioPageImage1Upload.single("image"),
+  uploadNegocioPageImage1
 );
 */
 router.patch("/", updateNegocioPage);

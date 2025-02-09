@@ -107,7 +107,7 @@ const uploadNegocioImage = async (req, res) => {
     );
 
     if (!negocio) {
-      return res.status(404).json({ message: "Ticket no encontrado" });
+      return res.status(404).json({ message: "Negocio no encontrado" });
     }
 
     res.status(201).json(negocio);
