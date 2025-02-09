@@ -93,9 +93,14 @@ function createBusinessCard(data) {
   i.className = "fa-solid fa-store fa-bounce";
   icon.appendChild(i);
 
+  const anchor = document.createElement("a");
+  anchor.href = `http://localhost:3001/test/${data._id}`;
+  buttonIcon.appendChild(anchor);
+
   const cube = document.createElement("div");
   cube.className = "cube";
-  buttonIcon.appendChild(cube);
+  anchor.appendChild(cube);
+  //  buttonIcon.appendChild(cube);
 
   const front = document.createElement("span");
   front.className = "side front";
