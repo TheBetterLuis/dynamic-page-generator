@@ -14,7 +14,7 @@ const NegocioSchema = new mongoose.Schema(
     },
     image: {
       type: String,
-      default: "../public/images/default/default.png",
+      default: "images/default/default.png",
     },
   },
   {
