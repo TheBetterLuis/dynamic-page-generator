@@ -1,4 +1,3 @@
-/savedImages
-/images
+/public/images/*
 /node_modules
 .env

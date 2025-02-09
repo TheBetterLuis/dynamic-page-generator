@@ -91,7 +91,7 @@ const uploadNegocioImage = async (req, res) => {
 
     if (image) {
       image = path.join(
-        "../public/images",
+        "images",
         negocioID,
         `${negocioID}${path.extname(req.file.originalname)}`
       );
