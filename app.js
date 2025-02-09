@@ -27,19 +27,19 @@ app.get("/", (req, res) => {
 });
 
 app.get("/testindex", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "testIndex.html"));
+  res.sendFile(path.join(__dirname, "client", "static_index.html"));
 });
 
 app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "about.html"));
 });
 
-app.get("/negocio", (req, res) => {
+app.get("/negocio/:id", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "negocio_template.html"));
 });
 
 app.get("/test/:id", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "TESTnegocio_template.html"));
+  res.sendFile(path.join(__dirname, "client", "static_negocio_template.html"));
 });
 
 app.get("/contact", (req, res) => {

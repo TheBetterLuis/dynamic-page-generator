@@ -94,7 +94,7 @@ function createBusinessCard(data) {
   icon.appendChild(i);
 
   const anchor = document.createElement("a");
-  anchor.href = `http://localhost:3001/test/${data._id}`;
+  anchor.href = `http://localhost:3001/negocio/${data._id}`;
   buttonIcon.appendChild(anchor);
 
   const cube = document.createElement("div");

@@ -1,46 +1,1591 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
     <link rel="stylesheet" href="css/amazonas.css" />
-    <link rel="icon" href="./Amazonas/Imagenes/ICON-AMAZONAS.png" />
+    <link rel="icon" href="./Amazonas/Imagenes/ICON-AMAZONAS.png">
     <title>Ariwë</title>
-  </head>
-  <body>
-    <h1>Welcome to the Main Page</h1>
-    <img
-      src="images/67a83adc146ea90dc5dc8164/1/67a83adc146ea90dc5dc8164.jpg"
-      alt=""
-    />
-    <img
-      src="images/67a83adc146ea90dc5dc8164/2/67a83adc146ea90dc5dc8164.jpg"
-      alt=""
-    />
-    <img
-      src="images/67a83adc146ea90dc5dc8164/3/67a83adc146ea90dc5dc8164.jpg"
-      alt=""
-    />
+</head>
+<body>
+<!-- 10 de febrero -->
+    <!--========= HEADER =========-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#AMAZONAS" class="nav__logo">
+                    <img class="img" src="./Amazonas/Imagenes/ICON-AMAZONAS.png" alt=""></i>ARIWË
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-5-fill nav__toggle-menu"></i>
+                    <i class="ri-close-large-line nav__toggle-close"></i>
+                </div>
+            </div>
+            <!--========= NAV MENU =========-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#AMAZONAS" class="nav__link"><h1 class="Nab__Name"><i class="ri-home-line icono__nab"></i>Inicio</h1></a>
+                    </li>
+
+                    <!--========= DROPDOWN 1 - CATEGORIAS =========-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            <h1 class="Nab__Name"><i class="ri-store-2-line icono__nab"></i>Categorias</h1> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                    <!-- 1🛑 -->
+                                <a href="#TURISMO">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-treasure-map-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Turismo</span>
+                                    </div>
+                                </a>
+                                    <!-- 2🛑 -->
+                                <a href="#HOTELERIA">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-hotel-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Hoteleria</span>
+                                    </div>
+                                </a>
+                                    <!-- 3🛑 -->
+                                <a href="#COMIDA">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-restaurant-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Comida</span>
+                                    </div>
+                                </a>
+                                    <!-- 4🛑 -->
+                                <a href="#ABASTOS">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-shopping-cart-2-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Abastos</span>
+                                    </div>
+                                </a>
+                                    <!-- 5🛑 -->
+                                <a href="#LICORERIAS">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-beer-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Licorerias</span>
+                                    </div>
+                                </a>
+                                    <!-- 6🛑 -->
+                                <a href="#FARMACIAS">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-pulse-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Farmacias</span>
+                                    </div>
+                                </a>
+                                    <!-- 7🛑 -->
+                                <a href="#MODA">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-shopping-bag-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Moda</span>
+                                    </div>
+                                </a>
+                                    <!-- 8🛑 -->
+                                <a href="#JUGUETERIA">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-gamepad-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">jugueteria</span>
+                                    </div>
+                                </a>
+                                    <!-- 9🛑 -->
+                                <a href="#MISCELANEA">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-gift-2-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Micelanea</span>
+                                    </div>
+                                </a>
+                                    <!-- 10🛑 -->
+                                <a href="#AUTOMOTRIS">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-motorbike-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Industria Automotris</span>
+                                    </div>
+                                </a>
+                                    <!-- 11🛑 -->
+                                <a href="#PAQUETERIA">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-truck-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Paqueteria</span>
+                                    </div>
+                                </a>
+                                    <!-- 12🛑 -->
+                                <a href="#SALUD">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pulse-ai-line"></i>
+                                        </div>
+                                        <span class="dropdown__title">Salud</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--========= SERVCIOS =========-->
+                    <li>
+                        <a href="./Amazonas/pages/Servicios.html" class="nav__link"><h1 class="Nab__Name"><i class="ri-customer-service-2-line icono__nab"></i>Servicios</h1></a>
+                    </li>  
+
+                    <!--========= SOBRE NOSOTROS =========-->
+                    <li>
+                        <a href="./Amazonas/pages/Sobre_ARIWË.html" class="nav__link"><h1 class="Nab__Name"><i class="ri-feedback-line icono__nab"></i>Sobre Nosotros</h1></a>
+                    </li>
+                    <!--========= AFILIADOS =========-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            <h1 class="Nab__Name"><i class="ri-service-line icono__nab"></i>Agentes de publicidad</h1> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <img class="Afiliados_img" src="./Amazonas/Imagenes/Imagenes_de_Afiliados/perfil_afiliado(2).png" alt="">
+                                    </div>
+                                    <span class="dropdown__title">MATATAN</span>
+                                    <div class="dropdown__social">
+                                        <a href="">
+                                            <i class="ri-facebook-circle-line icons-Afilialos"></i><span class="dropdown__link">Reventon Interactivo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <img class="Afiliados_img" src="./Amazonas/Imagenes/Imagenes_de_Afiliados/perfil_afiliado(1).png" alt="">
+                                    </div>
+                                    <span class="dropdown__title">Rortobelo filaos</span>
+                                </div>
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <img class="Afiliados_img" src="./Amazonas/Imagenes/Imagenes_de_Afiliados/perfil_afiliado(3).png" alt="">
+                                    </div>
+                                    <span class="dropdown__title">Arnulio Campos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--========= CONTENT =========-->
+    <div id="AMAZONAS" class="grid-container">
+        <div class="item1">
+            <h1 class="Amazonas_title">AMAZONAS</h1>
+            <span class="Amazonas_description">Tepuyes - Paisajes Exoticos - Rios Majestuosos - Cultura Indigena</span>
+            <!-- <div class="Container_Open-Close">
+                <div class="Container_OPEN">
+                    <div class="Box_icon_OPEN">
+                        <i class="ri-door-open-line OPEN"></i>
+                    </div>
+                    <div class="Container_OPEN_text">
+                        <h3 class="OPEN_text">Abierto</h3>
+                    </div>
+                </div>
+                <div class="Container_CLOSE">
+                    <div class="Box_icon_CLOSE">
+                        <i class="ri-door-closed-line CLOSE"></i>
+                    </div>
+                    <div class="Container_CLOSE_text">
+                        <h3 class="CLOSE_text">Cerrado</h3>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="item2">
+            <div class="img_amazonas_container">
+                <img id="AMAZONAS_img" class="img_amazonas" src="./Amazonas/Imagenes/MAPA-AMAZONAS.png" alt="">
+            </div>
+        </div>
+        <div class="item3">
+            <h1 class="Amazonas_title">CERRO AUTANA</h1>
+            <span class="Amazonas_description">"Montaña Sagrada" de los Piaroas. Su imponente forma y el túnel natural en su cima lo convierten en un símbolo espiritual y natural único en la Región Amazónica.</span>
+        </div>
+    </div>
+    <!--========= CARRUSEL DE IMG`S =========-->
+    <section id="CARRUSEL">
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(1).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(2).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(3).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(4).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(5).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(6).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/NEGOCIOS/COMIDA/COMIDA(3).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(1).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(2).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(3).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(4).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(5).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/Imagenes-carrusel/images-(6).jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="img_carrusel" src="./Amazonas/Imagenes/NEGOCIOS/COMIDA/COMIDA(3).jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--========= CARD NEGOCIOS =========-->
+    <section id="NEGOCIOS">
+        <div id="TURISMO" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">TURISMO</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Aventura inolvidable!</h4>
+        </div>
+
+    <section id="SECTION_CARDS" class="turismo-section"></section>
+            <div id="HOTELERIA" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">HOTELERIA</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Confort garantizado</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/HOTELERIA/2110ab7b3774c82ff5b568b61c23ad73.jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Vista Clara</h1>
+                    <h3 class="DESCRIPTION_Negocio">Hotel ubicado en lugares estratégicos con vistas panorámicas y servicios premium.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/HOTELERIA/ef1f2612a14bb2191e8f10d3afe652f6.jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Hogar Lejano</h1>
+                    <h3 class="DESCRIPTION_Negocio">Cadena hotelera económica diseñada para viajeros frecuentes que buscan comodidad y ahorro.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/HOTELERIA/H_Venetur/Venetur-card.jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">VENETUR</h1>
+                    <h3 class="DESCRIPTION_Negocio">Ofrecemos el mejor servicio de hospedaje, Piscina, restaurante y la colaboraciones de nuestros especialistas.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="COMIDA" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">COMIDA</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Sabor y tradición</h4>
+        </div>
 
     <section id="SECTION_CARDS" class="comida-section"></section>
-    <section id="SECTION_CARDS" class="turismo-section"></section>
+
+        <div id="ABASTOS" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">ABASTOS</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Todo en un solo lugar</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/ABASTOS/ABASTO(1).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Todo Fresco Market</h1>
+                    <h3 class="DESCRIPTION_Negocio">Tienda de abarrotes que garantiza productos frescos y locales.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/ABASTOS/ABASTO(2).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Canasta Viva</h1>
+                    <h3 class="DESCRIPTION_Negocio">Negocio enfocado en abastos orgánicos y sostenibles.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/ABASTOS/ABASTO(3).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">La Esquinita</h1>
+                    <h3 class="DESCRIPTION_Negocio">Tienda tradicional de barrio que ofrece productos de primera necesidad con atención personalizada.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="LICORERIAS" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">LICORERIAS</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Brinda momentos especiales</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/LICORERIAS/LICORERA(1).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Bodega Dorada</h1>
+                    <h3 class="DESCRIPTION_Negocio">Licorería premium con selección de vinos, licores y cervezas artesanales.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/LICORERIAS/LICORERA(2).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">La Cava de Oro</h1>
+                    <h3 class="DESCRIPTION_Negocio">Especialistas en destilados finos y bebidas exclusivas para eventos.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/LICORERIAS/LICORERA(3).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Brindis Express</h1>
+                    <h3 class="DESCRIPTION_Negocio">Venta y distribución de licores con entrega rápida a domicilio.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="FARMACIAS" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">FARMACIAS</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Tu salud, nuestra prioridad</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/FARMACIAS/FARMACIA(1).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Vida Plus Farma</h1>
+                    <h3 class="DESCRIPTION_Negocio">Farmacia integral con productos médicos y naturistas.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/FARMACIAS/FARMACIA(2).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Salud Vital</h1>
+                    <h3 class="DESCRIPTION_Negocio">Enfocada en medicamentos de calidad y productos de cuidado personal.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/FARMACIAS/FARMACIA(3).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">FarmaCerca</h1>
+                    <h3 class="DESCRIPTION_Negocio">Farmacia de conveniencia con un enfoque en rapidez y servicio.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="MODA" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">MODA</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Estilo que se lleva, calidad que se siente.</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/MODA/ROPA(1).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Estilo Prisma</h1>
+                    <h3 class="DESCRIPTION_Negocio">Tienda de ropa con colecciones versátiles y modernas.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/MODA/ROPA(2).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Future</h1>
+                    <h3 class="DESCRIPTION_Negocio">La moda no es cara si sabes dónde buscarla</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/MODA/ROPA(3).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Vanguardia Urbana</h1>
+                    <h3 class="DESCRIPTION_Negocio">Boutique especializada en moda contemporánea y urbana</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="JUGUETERIA" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">JUGUETERIA</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Diversión sin límites</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/JUGUETERIA/JUGUETERIA(1).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Mundo Pequeño</h1>
+                    <h3 class="DESCRIPTION_Negocio">Juguetería que estimula la imaginación de los niños con juguetes educativos</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/JUGUETERIA/JUGUETERIA(2).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Rincón de Fantasía</h1>
+                    <h3 class="DESCRIPTION_Negocio">Tienda con juguetes clásicos y modernos que alimentan la creatividad.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/JUGUETERIA/JUGUETERIA(3).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Juguetilandia</h1>
+                    <h3 class="DESCRIPTION_Negocio">Espacio donde los niños encuentran diversión y los adultos reviven recuerdos.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="MISCELANEA" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">MISCELANEA</h1>
+            <h4 class="SUBTITLE_NEGOCIOS"> De todo para todos</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/MISCELANEA/MISELANIA(1).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Caja Mágica</h1>
+                    <h3 class="DESCRIPTION_Negocio">Tienda que ofrece una mezcla de productos variados y artículos de uso diario.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/MISCELANEA/MISELANIA(2).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Tesoros del Hogar</h1>
+                    <h3 class="DESCRIPTION_Negocio">Miscelánea con una selección para el hogar y el día a día.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/MISCELANEA/MISELANIA(3).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Mercadito Alegre</h1>
+                    <h3 class="DESCRIPTION_Negocio">Todo en un solo lugar, con un enfoque en cercanía y precios accesibles.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="AUTOMOTRIS" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">Industria Automotris</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">En el camino, el motor es el corazón</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/INSDUSTRIA AUTOMOTRIS/p(0).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">SCAMBLER</h1>
+                    <h3 class="DESCRIPTION_Negocio">cuando se trata de motores, nosotros somos los mejores</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <a href="./Amazonas/pages/Automotris.html">
+                            <div class="cube">
+                                <span class="side front">Ver mas..</span>
+                                <span class="side top">SCAMBLER</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/INSDUSTRIA AUTOMOTRIS/p(1).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">OUNDERMOTORS</h1>
+                    <h3 class="DESCRIPTION_Negocio">la velocidad es nuestra meta</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/INSDUSTRIA AUTOMOTRIS/p(2).jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">OLD BIDER AND NOSE OR MINE</h1>
+                    <h3 class="DESCRIPTION_Negocio">no te quedes con el recuerdo de la velocidad mejor vivela</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="PAQUETERIA" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">Paqueteria</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">La distancia no importa cuando hay un paquete que esperar</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/PAQUETERIA/5d2d18d7d5c48a781f2c2e8bcd4115d4.jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Ruta Rápida</h1>
+                    <h3 class="DESCRIPTION_Negocio">Servicio de envíos nacionales e internacionales con seguimiento en tiempo real.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/PAQUETERIA/a83941ac41d1720eb57c2ce31de5eaf6.jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">EnvíaYa</h1>
+                    <h3 class="DESCRIPTION_Negocio">Paquetería con atención inmediata y tarifas competitivas.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/PAQUETERIA/c61b351866542b3afc65291ecb522eb4.jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Entrega Segura</h1>
+                    <h3 class="DESCRIPTION_Negocio">Empresa especializada en logística y transporte de mercancía.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="SALUD" class="BOX_TITLE">
+            <h1 class="TITLE_NEGOCIOS" id="">Salud</h1>
+            <h4 class="SUBTITLE_NEGOCIOS">Quien tiene salud,tiene esperanza; quien tiene esperanza, lo tiene todo</h4>
+        </div>
+        <section id="SECTION_CARDS">
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/SALUD/257ad16da0a9e97d196fae152155b976.jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Bienestar Activo</h1>
+                    <h3 class="DESCRIPTION_Negocio">Centro especializado en servicios de rehabilitación y fisioterapia.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/SALUD/ac7c948147dc58931e6f559b884a9e7b.jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Vida Plena</h1>
+                    <h3 class="DESCRIPTION_Negocio">Negocio enfocado en suplementos alimenticios y productos naturales.</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="./Amazonas/Imagenes/NEGOCIOS/SALUD/ce05d82c1e4f6e1376416498a89b063e.jpg" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio">Nueva Esperanza</h1>
+                    <h3 class="DESCRIPTION_Negocio">Proveedor integral de servicios médicos y diagnósticos</h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Card">
+                <div class="Img_Box">
+                    <img class="Img_Negocio" src="" alt="">
+                </div>
+                <div class="Text_Box">
+                    <h1 class="TITLE_Negocio"></h1>
+                    <h3 class="DESCRIPTION_Negocio"></h3>
+                </div>
+                <div id="Button_Box">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <i id="style_icon_negocio" class="fa-solid fa-store fa-bounce"></i>
+                        </div>
+                        <div class="cube">
+                            <span class="side front">Ver mas..</span>
+                            <span class="side top"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--========= FOOTER =========-->
+    <footer>
+        <div class="BOX_FOOTER">
+            <div class="BOX_FOOTER_TITLE">
+                <h1 class="FOOTER_TITLE">Somos ARIWË</h1>
+                <h4 class="FOOTER_SUBTITLE">UN LUGAR PARA TODOS</h4>          
+                <h4 class="FOOTER_SUBTITLE">Gracias por visitar nuestra pagina.</h4>
+                <h5 class="FOOTER_Copyright">Copyright<i class="ri-copyright-line"></i> 2025 Ariwë, Designado a Ariwë</h5>
+            </div>
+            <div>
+                <a href="./Amazonas/pages/Terms_of_Service.html">
+                    <span class="FOOTER_Link">Términos de Servicio</span>
+                </a>
+            </div>
+            <div>
+                <a href="./Amazonas/pages/Privacy_Policy.html">
+                    <span class="FOOTER_Link">Política de Privacidad</span>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
-  </body>
+    <script src="./Amazonas/JS/Barra-de-navegacion.js"></script>
+</body>
 </html>
